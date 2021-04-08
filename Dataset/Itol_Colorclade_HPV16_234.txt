@@ -1,0 +1,322 @@
+TREE_COLORS
+#use this template to define branch colors and styles, colored ranges and label colors/font styles/backgrounds
+#lines starting with a hash are comments and ignored during parsing
+
+#=================================================================#
+#                    MANDATORY SETTINGS                           #
+#=================================================================#
+#select the separator which is used to delimit the data below (TAB,SPACE or COMMA).This separator must be used throughout this file (except in the SEPARATOR line, which uses space).
+
+#SEPARATOR TAB
+SEPARATOR SPACE
+#SEPARATOR COMMA
+
+#First 3 fields define the node, type and color
+#Possible types are:
+#'range': defines a colored range (colored background for labels/clade)
+#'clade': defines color/style for all branches in a clade
+#'branch': defines color/style for a single branch
+#'label': defines font color/style for the leaf label
+#'label_background': defines the leaf label background color
+
+#The following additional fields are required:
+#for 'range', field 4 defines the colored range label (used in the legend)
+
+#The following additional fields are optional:
+#for 'label', field 4 defines the font style ('normal',''bold', 'italic' or 'bold-italic') and field 5 defines the numeric scale factor for the font size (eg. with value 2, font size for that label will be 2x the standard size)
+#for 'clade' and 'branch', field 4 defines the branch style ('normal' or 'dashed') and field 5 defines the branch width scale factor (eg. with value 0.5, branch width for that clade will be 0.5 the standard width)
+
+#Internal tree nodes can be specified using IDs directly, or using the 'last common ancestor' method described in iTOL help pages
+#=================================================================#
+#       Actual data follows after the "DATA" keyword              #
+#=================================================================#
+DATA
+#NODE_ID TYPE COLOR LABEL_OR_STYLE SIZE_FACTOR
+
+#Examples
+#internal node with solid branches colored blue and twice the standard width
+#9031|9606 clade #0000ff normal 2
+#internal node with dashed branches colored red and one half the standard width
+#601|340 clade #ff0000 dashed 0.5
+#a single internal branch colored green, dashed and 5 times the normal width
+#915|777 branch #00ff00 dashed 5
+
+#colored range covering all leaves of an internal node,  colored red and with label 'Eukaryota'
+#184922|9606 range #ff0000 Eukaryota
+#examples of colored ranges from iTOL's Tree of Life
+#2190|2287 range #aaffaa Archaea
+#623|1502 range #aaaaff Bacteria
+
+#leaf label for node 9606 will be displayed in green, bold and twice the regular font size
+#9606 label #00ff00 bold 2
+
+#leaf label for node 9031 will be displayed in yellow, bold italic and half the regular font size
+#9031 label #ffff00 bold-italic 0.5
+
+#leaf label for node 8015 will be displayed in blue
+#8015 label #0000ff
+
+#leaf label for node 9606 will have a semi-transparent red background
+#9606 label_background rgba(255,0,0,0.5)
+
+
+#9031|9606 clade #0000ff normal 2
+NC001526 label #ee38ff bold 2
+MN961217 label #ee38ff bold 2
+MN961216 label #ee38ff bold 2
+MN961215 label #ee38ff bold 2
+MN961214 label #ee38ff bold 2
+MN961213 label #ee38ff bold 2
+MN961212 label #ee38ff bold 2
+MN961210 label #ee38ff bold 2
+LC511112 label #ee38ff bold 2
+LC456609 label #ee38ff bold 2
+LC456637 label #ee38ff bold 2
+LC456632 label #ee38ff bold 2
+LC456631 label #ee38ff bold 2
+LC456197 label #ee38ff bold 2
+LC456192 label #ee38ff bold 2
+LC456187 label #ee38ff bold 2
+LC368988 label #ee38ff bold 2
+LC368984 label #ee38ff bold 2
+LC368983 label #ee38ff bold 2
+LC368980 label #ee38ff bold 2
+LC368979 label #ee38ff bold 2
+LC368977 label #ee38ff bold 2
+LC368976 label #ee38ff bold 2
+LC368973 label #ee38ff bold 2
+LC368971 label #ee38ff bold 2
+LC368968 label #ee38ff bold 2
+LC368967 label #ee38ff bold 2
+LC368964 label #ee38ff bold 2
+LC368956 label #ee38ff bold 2
+LC368955 label #ee38ff bold 2
+KU053855 label #ee38ff bold 2
+KU053853 label #ee38ff bold 2
+KU053891 label #ee38ff bold 2
+KU053890 label #ee38ff bold 2
+KU053889 label #ee38ff bold 2
+KU053888 label #ee38ff bold 2
+KU053887 label #ee38ff bold 2
+KU053886 label #ee38ff bold 2
+KU053885 label #ee38ff bold 2
+KU053884 label #ee38ff bold 2
+KU053883 label #ee38ff bold 2
+KU053882 label #ee38ff bold 2
+KU053881 label #ee38ff bold 2
+KU053880 label #ee38ff bold 2
+KU053879 label #ee38ff bold 2
+KU053878 label #ee38ff bold 2
+KU053877 label #ee38ff bold 2
+KU053876 label #ee38ff bold 2
+KU053875 label #ee38ff bold 2
+KU053874 label #ee38ff bold 2
+KU053873 label #ee38ff bold 2
+KU053872 label #ee38ff bold 2
+KU053871 label #ee38ff bold 2
+KU053870 label #ee38ff bold 2
+KU053869 label #ee38ff bold 2
+KU053868 label #ee38ff bold 2
+KU053867 label #ee38ff bold 2
+KU053866 label #ee38ff bold 2
+KU053865 label #ee38ff bold 2
+KU053864 label #ee38ff bold 2
+KU053863 label #ee38ff bold 2
+KU053862 label #ee38ff bold 2
+KU053861 label #ee38ff bold 2
+KU053860 label #ee38ff bold 2
+KU053859 label #ee38ff bold 2
+KU053858 label #ee38ff bold 2
+KU053857 label #ee38ff bold 2
+KU053856 label #ee38ff bold 2
+KU053854 label #ee38ff bold 2
+KU053852 label #ee38ff bold 2
+KU053851 label #ee38ff bold 2
+KU053850 label #ee38ff bold 2
+KU053849 label #ee38ff bold 2
+KU053848 label #ee38ff bold 2
+KU053847 label #ee38ff bold 2
+KU053846 label #ee38ff bold 2
+KU053845 label #ee38ff bold 2
+KU053844 label #ee38ff bold 2
+KU053843 label #ee38ff bold 2
+KU053842 label #ee38ff bold 2
+KU053841 label #ee38ff bold 2
+KU053840 label #ee38ff bold 2
+KU053839 label #ee38ff bold 2
+KU053838 label #ee38ff bold 2
+KU053837 label #ee38ff bold 2
+KU053836 label #ee38ff bold 2
+KU053835 label #ee38ff bold 2
+KU053834 label #ee38ff bold 2
+KU053833 label #ee38ff bold 2
+KU053832 label #ee38ff bold 2
+KU053831 label #ee38ff bold 2
+KU053830 label #ee38ff bold 2
+KU053829 label #ee38ff bold 2
+KU053828 label #ee38ff bold 2
+KU053827 label #ee38ff bold 2
+KU053826 label #ee38ff bold 2
+KU053825 label #ee38ff bold 2
+KU053824 label #ee38ff bold 2
+KU053823 label #ee38ff bold 2
+KP212157 label #ee38ff bold 2
+KP212153 label #ee38ff bold 2
+KP212152 label #ee38ff bold 2
+KP212151 label #ee38ff bold 2
+KP212150 label #ee38ff bold 2
+MN961211 label #ee38ff bold 2
+LC368987 label #ee38ff bold 2
+LC368985 label #ee38ff bold 2
+LC368974 label #ee38ff bold 2
+LC368965 label #ee38ff bold 2
+LC368962 label #ee38ff bold 2
+LC368961 label #ee38ff bold 2
+LC368958 label #ee38ff bold 2
+LC368954 label #ee38ff bold 2
+KU053903 label #ee38ff bold 2
+KU053902 label #ee38ff bold 2
+KU053901 label #ee38ff bold 2
+KU053900 label #ee38ff bold 2
+KU053899 label #ee38ff bold 2
+KU053898 label #ee38ff bold 2
+KU053897 label #ee38ff bold 2
+KU053896 label #ee38ff bold 2
+KU053895 label #ee38ff bold 2
+KU053894 label #ee38ff bold 2
+KU053893 label #ee38ff bold 2
+KU053892 label #ee38ff bold 2
+KP212155 label #ee38ff bold 2
+LC511106 label #ee38ff bold 2
+LC456636 label #ee38ff bold 2
+LC456185 label #ee38ff bold 2
+LC368991 label #ee38ff bold 2
+LC511111 label #ee38ff bold 2
+LC511110 label #ee38ff bold 2
+LC511109 label #ee38ff bold 2
+LC511108 label #ee38ff bold 2
+LC511107 label #ee38ff bold 2
+LC456606 label #ee38ff bold 2
+LC456607 label #ee38ff bold 2
+LC456608 label #ee38ff bold 2
+LC456610 label #ee38ff bold 2
+LC456611 label #ee38ff bold 2
+LC456612 label #ee38ff bold 2
+LC456613 label #ee38ff bold 2
+LC456614 label #ee38ff bold 2
+LC456615 label #ee38ff bold 2
+LC456616 label #ee38ff bold 2
+LC456617 label #ee38ff bold 2
+LC456620 label #ee38ff bold 2
+LC456621 label #ee38ff bold 2
+LC456622 label #ee38ff bold 2
+LC456623 label #ee38ff bold 2
+LC456624 label #ee38ff bold 2
+LC456625 label #ee38ff bold 2
+LC456627 label #ee38ff bold 2
+LC456628 label #ee38ff bold 2
+LC456635 label #ee38ff bold 2
+LC456634 label #ee38ff bold 2
+LC456633 label #ee38ff bold 2
+LC456201 label #ee38ff bold 2
+LC456200 label #ee38ff bold 2
+LC456199 label #ee38ff bold 2
+LC456198 label #ee38ff bold 2
+LC456194 label #ee38ff bold 2
+LC456191 label #ee38ff bold 2
+LC456189 label #ee38ff bold 2
+LC456184 label #ee38ff bold 2
+LC456182 label #ee38ff bold 2
+LC456181 label #ee38ff bold 2
+LC368997 label #ee38ff bold 2
+LC368996 label #ee38ff bold 2
+LC368995 label #ee38ff bold 2
+LC368994 label #ee38ff bold 2
+LC368992 label #ee38ff bold 2
+LC368990 label #ee38ff bold 2
+LC368989 label #ee38ff bold 2
+LC368986 label #ee38ff bold 2
+LC368982 label #ee38ff bold 2
+LC368981 label #ee38ff bold 2
+LC368978 label #ee38ff bold 2
+LC368975 label #ee38ff bold 2
+LC368972 label #ee38ff bold 2
+LC368970 label #ee38ff bold 2
+LC368969 label #ee38ff bold 2
+LC368966 label #ee38ff bold 2
+LC368963 label #ee38ff bold 2
+LC368960 label #ee38ff bold 2
+LC368957 label #ee38ff bold 2
+LC368952 label #ee38ff bold 2
+KU053905 label #ee38ff bold 2
+KU053904 label #ee38ff bold 2
+HQ644245 label #ee38ff bold 2
+HQ644246 label #ee38ff bold 2
+HQ644236 label #ee38ff bold 2
+AF536179 label #ee38ff bold 2
+HQ644234 label #ee38ff bold 2
+AF534061 label #ee38ff bold 2
+HQ644261 label #ee38ff bold 2
+KU053908 label #2afa38 bold 2
+KU053907 label #2afa38 bold 2
+KU053906 label #2afa38 bold 2
+KU053910 label #2afa38 bold 2
+KU053909 label #2afa38 bold 2
+KU053915 label #2afa38 bold 2
+KU053914 label #2afa38 bold 2
+KU053913 label #2afa38 bold 2
+KU053912 label #2afa38 bold 2
+KU053911 label #2afa38 bold 2
+HQ644298 label #2afa38 bold 2
+AF472508 label #2afa38 bold 2
+AF536180 label #2afa38 bold 2
+KU053919 label #04FC97 bold 2
+KU053918 label #04FC97 bold 2
+KU053917 label #04FC97 bold 2
+KU053916 label #04FC97 bold 2
+KU053921 label #04FC97 bold 2
+KU053920 label #04FC97 bold 2
+KU053925 label #04FC97 bold 2
+KU053924 label #04FC97 bold 2
+KU053923 label #04FC97 bold 2
+KU053922 label #04FC97 bold 2
+HQ644244 label #04FC97 bold 2
+HQ644243 label #04FC97 bold 2
+HQ644249 label #04FC97 bold 2
+HQ644291 label #04FC97 bold 2
+AF472509 label #04FC97 bold 2
+LC368953 label #FD0377 bold 2
+KU053927 label #FD0377 bold 2
+KU053926 label #FD0377 bold 2
+KU053930 label #FD0377 bold 2
+KU053929 label #FD0377 bold 2
+KU053928 label #FD0377 bold 2
+LC368993 label #FD0377 bold 2
+KU053936 label #FD0377 bold 2
+KU053935 label #FD0377 bold 2
+LC456618 label #FD0377 bold 2
+LC456190 label #FD0377 bold 2
+KU053944 label #FD0377 bold 2
+KU053943 label #FD0377 bold 2
+KU053942 label #FD0377 bold 2
+KU053941 label #FD0377 bold 2
+KU053940 label #FD0377 bold 2
+KU053939 label #FD0377 bold 2
+KU053938 label #FD0377 bold 2
+KU053937 label #FD0377 bold 2
+KP212159 label #FD0377 bold 2
+KP212158 label #FD0377 bold 2
+KP212156 label #FD0377 bold 2
+KP212154 label #FD0377 bold 2
+KU053934 label #FD0377 bold 2
+KU053933 label #FD0377 bold 2
+KU053932 label #FD0377 bold 2
+KU053931 label #FD0377 bold 2
+HQ644257 label #FD0377 bold 2
+AY686579 label #FD0377 bold 2
+HQ644281 label #FD0377 bold 2
+HQ644277 label #FD0377 bold 2
+HQ644263 label #FD0377 bold 2
+AF402678 label #FD0377 bold 2
+HQ644289 label #FD0377 bold 2
+HQ644295 label #FD0377 bold 2
